@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/223092cf53.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>Login page</title>
+</head>
+<body>
+    <main>
+        <div class="container" href="login-line">
+            <div class="img-container"></div>
+            <div class="sign-up-container">
+                <div class="title-container" >
+                    <h1>Login Page</h1>
+                    
+                </div>
+                <form action="" class="sign-up-form" id="form">
+                    <div class="form-row">
+                        <label for="full-name">Name</label>
+                        <input autofocus id="full-name" name="full-name" type="text" required placeholder="">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone number</label>
+
+                        <input id="phone" name="phone" type="tel" pattern="[0-9]{10}" placeholder="">
+                       
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" required placeholder="" minlength="8" maxlength="20" autocomplete="new-password">
+                        <p class="input-hint">
+                            Your password should be 8-20 characters long
+                        </p>
+                    </div>
+                    <div class="form-row">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" required placeholder="" minlength="8" maxlength="20" autocomplete="new-password">
+                        <p class="input-hint" id="message"></p>
+                        <p class="input-hint">
+                            Your password should be 8-20 characters long
+                        </p>
+                        
+                    </div>
+                    <div class="form-row-btn">
+                        <button class="submit-button" id="btn">sign-up</button>
+                        <div class="login-line">
+                            <p>Already have an account?</p><a href="sign-up-form" class="login">log in</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>polipallirajesh
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+        </p>
+        <a href="https://github.com/rajeshpolipalli" class="copy" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+</body>
+</html>
